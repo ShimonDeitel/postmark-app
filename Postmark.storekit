@@ -1,0 +1,90 @@
+{
+  "identifier" : "4B4B8B0E-2E0D-4C4B-93F1-7A5D8C7C21AF",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+
+  ],
+  "settings" : {
+    "_applicationInternalID" : "0",
+    "_developerTeamID" : "W7Q885Q59C",
+    "_failTransactionsEnabled" : false,
+    "_locale" : "en_US",
+    "_storefront" : "USA",
+    "_storeKitErrors" : [
+
+    ]
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "21750002",
+      "localizations" : [
+
+      ],
+      "name" : "Postmark Pro",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "4.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "6480000101",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Unlimited identifications, variety detection, album export",
+              "displayName" : "Postmark Pro Monthly",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "postmark_pro_monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Postmark Pro Monthly",
+          "subscriptionGroupID" : "21750002",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : [
+
+          ]
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "29.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "6480000102",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Unlimited identifications, variety detection, album export",
+              "displayName" : "Postmark Pro Yearly",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "postmark_pro_yearly",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "Postmark Pro Yearly",
+          "subscriptionGroupID" : "21750002",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : [
+
+          ]
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 4,
+    "minor" : 0
+  }
+}

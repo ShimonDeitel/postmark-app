@@ -1,0 +1,408 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0207BF9CC9B205E1B27BDF45 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A293C04CA15082030A422820 /* PaywallView.swift */; };
+		3F5972D383740E35E5345684 /* StampResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFFF37622D76405688B8E3D /* StampResult.swift */; };
+		5CD6CD1FA3A5A65D01AC2BA8 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A9299168253525034F3455 /* ScanView.swift */; };
+		7176B6CEE443E0371CD5B3E8 /* PostmarkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38F9B11BC5F4746C690DE35 /* PostmarkAPI.swift */; };
+		742A706CFADC2A1D8346CD48 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DCBA2F37248D4DD14CA0DA /* CameraService.swift */; };
+		8ADD27C503E90E3C75281A84 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C60540BA8B33203A70DFEA /* StoreManager.swift */; };
+		8CC92A6FD4E55B26D1EC1D9D /* PostmarkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8D84F4052D28CAAEB25B03 /* PostmarkApp.swift */; };
+		92BE3ECF2A01A577DA901CE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A56956B83F965E9AE097362D /* Assets.xcassets */; };
+		B03A19BE3185BA090FC1B703 /* StampDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910DB33CFB60C7CD0782246C /* StampDetailView.swift */; };
+		BEE2F485F94B65072CB2B321 /* AlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73141219A77E58486ED31EE7 /* AlbumView.swift */; };
+		E3607F8BEFBFAC30E1219565 /* StampItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4838523BFD1D10018864AD0 /* StampItem.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		15C60540BA8B33203A70DFEA /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
+		19DCBA2F37248D4DD14CA0DA /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
+		73141219A77E58486ED31EE7 /* AlbumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumView.swift; sourceTree = "<group>"; };
+		7F62023EC58258C0D63A52BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		910DB33CFB60C7CD0782246C /* StampDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampDetailView.swift; sourceTree = "<group>"; };
+		A293C04CA15082030A422820 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
+		A2A9299168253525034F3455 /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
+		A56956B83F965E9AE097362D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D4838523BFD1D10018864AD0 /* StampItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampItem.swift; sourceTree = "<group>"; };
+		EE70A97298077EDF49903DCA /* Postmark.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Postmark.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F38F9B11BC5F4746C690DE35 /* PostmarkAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostmarkAPI.swift; sourceTree = "<group>"; };
+		FB8D84F4052D28CAAEB25B03 /* PostmarkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostmarkApp.swift; sourceTree = "<group>"; };
+		FCFFF37622D76405688B8E3D /* StampResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampResult.swift; sourceTree = "<group>"; };
+		"TEMP_A7B1380B-E76D-449A-8B26-8E5D8CEA4874" /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		30E9C30413CB75116313EC40 = {
+			isa = PBXGroup;
+			children = (
+				E4556D71F0CA628819D0207E /* Postmark */,
+				75CC1C776FA150238DE3309F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		75CC1C776FA150238DE3309F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE70A97298077EDF49903DCA /* Postmark.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA916D50619CAB1A5D76D65A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D4838523BFD1D10018864AD0 /* StampItem.swift */,
+				FCFFF37622D76405688B8E3D /* StampResult.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BF6443E1DA138C1C3DA11968 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				73141219A77E58486ED31EE7 /* AlbumView.swift */,
+				A293C04CA15082030A422820 /* PaywallView.swift */,
+				A2A9299168253525034F3455 /* ScanView.swift */,
+				910DB33CFB60C7CD0782246C /* StampDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C71EBA7A13A39233C2D23556 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				19DCBA2F37248D4DD14CA0DA /* CameraService.swift */,
+				F38F9B11BC5F4746C690DE35 /* PostmarkAPI.swift */,
+				15C60540BA8B33203A70DFEA /* StoreManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E4556D71F0CA628819D0207E /* Postmark */ = {
+			isa = PBXGroup;
+			children = (
+				A56956B83F965E9AE097362D /* Assets.xcassets */,
+				7F62023EC58258C0D63A52BF /* Info.plist */,
+				FB8D84F4052D28CAAEB25B03 /* PostmarkApp.swift */,
+				BA916D50619CAB1A5D76D65A /* Models */,
+				C71EBA7A13A39233C2D23556 /* Services */,
+				BF6443E1DA138C1C3DA11968 /* Views */,
+			);
+			path = Postmark;
+			sourceTree = "<group>";
+		};
+		"TEMP_87AEE725-1C7F-4DB0-A5FE-CAFEC8C128E2" /* Postmark */ = {
+			isa = PBXGroup;
+			children = (
+				"TEMP_A7B1380B-E76D-449A-8B26-8E5D8CEA4874" /* Secrets.xcconfig */,
+			);
+			path = Postmark;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2E9DFE7229345864747B0828 /* Postmark */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 247D08A5283ADFE7550DF196 /* Build configuration list for PBXNativeTarget "Postmark" */;
+			buildPhases = (
+				CDC545E67FB2E943E43F9827 /* Sources */,
+				8732F236C92A2C88DF0294A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Postmark;
+			packageProductDependencies = (
+			);
+			productName = Postmark;
+			productReference = EE70A97298077EDF49903DCA /* Postmark.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAA8F27D82E7B4B4139FD461 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					2E9DFE7229345864747B0828 = {
+						DevelopmentTeam = W7Q885Q59C;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 05EC71A9C820228966D9C5CD /* Build configuration list for PBXProject "Postmark" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 30E9C30413CB75116313EC40;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 75CC1C776FA150238DE3309F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E9DFE7229345864747B0828 /* Postmark */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8732F236C92A2C88DF0294A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92BE3ECF2A01A577DA901CE7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDC545E67FB2E943E43F9827 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEE2F485F94B65072CB2B321 /* AlbumView.swift in Sources */,
+				742A706CFADC2A1D8346CD48 /* CameraService.swift in Sources */,
+				0207BF9CC9B205E1B27BDF45 /* PaywallView.swift in Sources */,
+				7176B6CEE443E0371CD5B3E8 /* PostmarkAPI.swift in Sources */,
+				8CC92A6FD4E55B26D1EC1D9D /* PostmarkApp.swift in Sources */,
+				5CD6CD1FA3A5A65D01AC2BA8 /* ScanView.swift in Sources */,
+				B03A19BE3185BA090FC1B703 /* StampDetailView.swift in Sources */,
+				E3607F8BEFBFAC30E1219565 /* StampItem.swift in Sources */,
+				3F5972D383740E35E5345684 /* StampResult.swift in Sources */,
+				8ADD27C503E90E3C75281A84 /* StoreManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		25953028F22E1E252051AFD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGNING_ALLOWED[sdk=iphonesimulator*]" = NO;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = W7Q885Q59C;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		66DD398F8C9890BBD44DABB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = "TEMP_A7B1380B-E76D-449A-8B26-8E5D8CEA4874" /* Secrets.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Postmark/Info.plist;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Postmark photographs your stamps so they can be identified and valued. Photos are only sent for analysis when you tap Scan.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Postmark can identify a stamp from a photo already in your library, for example a picture of an album page or a lot listing.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.deitel.postmark;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6CDA3EBF35416E9391D69355 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGNING_ALLOWED[sdk=iphonesimulator*]" = NO;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = W7Q885Q59C;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E597EB5BAD23F4BFFA93BC2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = "TEMP_A7B1380B-E76D-449A-8B26-8E5D8CEA4874" /* Secrets.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Postmark/Info.plist;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Postmark photographs your stamps so they can be identified and valued. Photos are only sent for analysis when you tap Scan.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Postmark can identify a stamp from a photo already in your library, for example a picture of an album page or a lot listing.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.deitel.postmark;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05EC71A9C820228966D9C5CD /* Build configuration list for PBXProject "Postmark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25953028F22E1E252051AFD3 /* Debug */,
+				6CDA3EBF35416E9391D69355 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		247D08A5283ADFE7550DF196 /* Build configuration list for PBXNativeTarget "Postmark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E597EB5BAD23F4BFFA93BC2E /* Debug */,
+				66DD398F8C9890BBD44DABB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAA8F27D82E7B4B4139FD461 /* Project object */;
+}

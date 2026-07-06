@@ -1,0 +1,75 @@
+name: Postmark
+options:
+  bundleIdPrefix: com.deitel
+  deploymentTarget:
+    iOS: "26.0"
+  developmentLanguage: en
+  createIntermediateGroups: true
+  generateEmptyDirectories: true
+
+# ----------------------------------------------------------------------------
+# Settings applied to every target. Signing is configured for team W7Q885Q59C
+# (Joshua Deitel) with the com.deitel bundle prefix. Simulator builds work
+# without an account: signing is disabled for the simulator SDK only, so
+# `xcodebuild ... build` is green with placeholder ids, while device builds
+# sign normally.
+# ----------------------------------------------------------------------------
+settings:
+  base:
+    DEVELOPMENT_TEAM: W7Q885Q59C        # Joshua Deitel — same team as Attic
+    CODE_SIGN_STYLE: Automatic
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    IPHONEOS_DEPLOYMENT_TARGET: "26.0"
+    TARGETED_DEVICE_FAMILY: "1"                 # iPhone only
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+    SWIFT_EMIT_LOC_STRINGS: YES
+    GCC_TREAT_WARNINGS_AS_ERRORS: NO
+    SWIFT_TREAT_WARNINGS_AS_ERRORS: NO
+    "CODE_SIGNING_ALLOWED[sdk=iphonesimulator*]": NO
+
+targets:
+  Postmark:
+    type: application
+    platform: iOS
+    sources:
+      - path: Postmark
+    # Secrets.xcconfig supplies POSTMARK_API_KEY / POSTMARK_API_ENDPOINT /
+    # POSTMARK_MODEL. It is gitignored; `make gen` creates it from
+    # Secrets.xcconfig.example.
+    configFiles:
+      Debug: Secrets.xcconfig
+      Release: Secrets.xcconfig
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.deitel.postmark
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: "UIInterfaceOrientationPortrait"
+        INFOPLIST_KEY_NSCameraUsageDescription: "Postmark photographs your stamps so they can be identified and valued. Photos are only sent for analysis when you tap Scan."
+        INFOPLIST_KEY_NSPhotoLibraryUsageDescription: "Postmark can identify a stamp from a photo already in your library, for example a picture of an album page or a lot listing."
+        INFOPLIST_KEY_ITSAppUsesNonExemptEncryption: NO
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+    # Custom Info.plist keys (merged with the GENERATE_INFOPLIST_FILE output).
+    # Values come from Secrets.xcconfig via build-setting substitution.
+    info:
+      path: Postmark/Info.plist
+      properties:
+        POSTMARK_API_KEY: $(POSTMARK_API_KEY)
+        POSTMARK_API_ENDPOINT: $(POSTMARK_API_ENDPOINT)
+        POSTMARK_MODEL: $(POSTMARK_MODEL)
+
+schemes:
+  Postmark:
+    build:
+      targets:
+        Postmark: all
+    run:
+      config: Debug
+      # Local StoreKit testing config so the paywall works in the simulator.
+      storeKitConfiguration: Postmark.storekit
+    test:
+      config: Debug
