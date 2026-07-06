@@ -10,10 +10,8 @@ struct PaywallView: View {
     @State private var selectedProductID: String?
     @State private var isPurchasing = false
 
-    // Live legal pages are a submission blocker; links render once these
-    // exist (see MILLION_QUEUE.md shared-infrastructure notes).
-    private static let privacyURL: URL? = nil
-    private static let termsURL: URL? = nil
+    private static let privacyURL = URL(string: "https://shimondeitel.github.io/postmark-app/privacy.html")
+    private static let termsURL = URL(string: "https://shimondeitel.github.io/postmark-app/terms.html")
 
     var body: some View {
         ZStack {
