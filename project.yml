@@ -48,6 +48,7 @@ targets:
         INFOPLIST_KEY_UILaunchScreen_Generation: YES
         INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
         INFOPLIST_KEY_UISupportedInterfaceOrientations: "UIInterfaceOrientationPortrait"
+        INFOPLIST_KEY_UIRequiresFullScreen: YES
         INFOPLIST_KEY_NSCameraUsageDescription: "Postmark photographs your stamps so they can be identified and valued. Photos are only sent for analysis when you tap Scan."
         INFOPLIST_KEY_NSPhotoLibraryUsageDescription: "Postmark can identify a stamp from a photo already in your library, for example a picture of an album page or a lot listing."
         INFOPLIST_KEY_ITSAppUsesNonExemptEncryption: NO
