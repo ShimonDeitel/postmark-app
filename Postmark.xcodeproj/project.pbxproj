@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0207BF9CC9B205E1B27BDF45 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A293C04CA15082030A422820 /* PaywallView.swift */; };
+		2A58AC9C6B8BB2768854302F /* PostmarkTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1946127FD6A663EC081E5540 /* PostmarkTheme.swift */; };
 		3F5972D383740E35E5345684 /* StampResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFFF37622D76405688B8E3D /* StampResult.swift */; };
 		5CD6CD1FA3A5A65D01AC2BA8 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A9299168253525034F3455 /* ScanView.swift */; };
 		7176B6CEE443E0371CD5B3E8 /* PostmarkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38F9B11BC5F4746C690DE35 /* PostmarkAPI.swift */; };
@@ -15,6 +16,7 @@
 		8ADD27C503E90E3C75281A84 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C60540BA8B33203A70DFEA /* StoreManager.swift */; };
 		8CC92A6FD4E55B26D1EC1D9D /* PostmarkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8D84F4052D28CAAEB25B03 /* PostmarkApp.swift */; };
 		92BE3ECF2A01A577DA901CE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A56956B83F965E9AE097362D /* Assets.xcassets */; };
+		AB4648F0ABFAB758F83DD440 /* CancellationMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F8D64F83A04042C5C2D851 /* CancellationMark.swift */; };
 		B03A19BE3185BA090FC1B703 /* StampDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910DB33CFB60C7CD0782246C /* StampDetailView.swift */; };
 		BEE2F485F94B65072CB2B321 /* AlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73141219A77E58486ED31EE7 /* AlbumView.swift */; };
 		E3607F8BEFBFAC30E1219565 /* StampItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4838523BFD1D10018864AD0 /* StampItem.swift */; };
@@ -22,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		15C60540BA8B33203A70DFEA /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
+		1946127FD6A663EC081E5540 /* PostmarkTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostmarkTheme.swift; sourceTree = "<group>"; };
 		19DCBA2F37248D4DD14CA0DA /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
 		73141219A77E58486ED31EE7 /* AlbumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumView.swift; sourceTree = "<group>"; };
 		7F62023EC58258C0D63A52BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -31,10 +34,11 @@
 		A56956B83F965E9AE097362D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4838523BFD1D10018864AD0 /* StampItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampItem.swift; sourceTree = "<group>"; };
 		EE70A97298077EDF49903DCA /* Postmark.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Postmark.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1F8D64F83A04042C5C2D851 /* CancellationMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancellationMark.swift; sourceTree = "<group>"; };
 		F38F9B11BC5F4746C690DE35 /* PostmarkAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostmarkAPI.swift; sourceTree = "<group>"; };
 		FB8D84F4052D28CAAEB25B03 /* PostmarkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostmarkApp.swift; sourceTree = "<group>"; };
 		FCFFF37622D76405688B8E3D /* StampResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampResult.swift; sourceTree = "<group>"; };
-		"TEMP_A7B1380B-E76D-449A-8B26-8E5D8CEA4874" /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
+		"TEMP_123190D5-4CB1-4551-A2E5-4A01D98A0A70" /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -90,6 +94,7 @@
 				A56956B83F965E9AE097362D /* Assets.xcassets */,
 				7F62023EC58258C0D63A52BF /* Info.plist */,
 				FB8D84F4052D28CAAEB25B03 /* PostmarkApp.swift */,
+				F4B3C1BA3A89DCCBB689F936 /* Design */,
 				BA916D50619CAB1A5D76D65A /* Models */,
 				C71EBA7A13A39233C2D23556 /* Services */,
 				BF6443E1DA138C1C3DA11968 /* Views */,
@@ -97,10 +102,19 @@
 			path = Postmark;
 			sourceTree = "<group>";
 		};
-		"TEMP_87AEE725-1C7F-4DB0-A5FE-CAFEC8C128E2" /* Postmark */ = {
+		F4B3C1BA3A89DCCBB689F936 /* Design */ = {
 			isa = PBXGroup;
 			children = (
-				"TEMP_A7B1380B-E76D-449A-8B26-8E5D8CEA4874" /* Secrets.xcconfig */,
+				F1F8D64F83A04042C5C2D851 /* CancellationMark.swift */,
+				1946127FD6A663EC081E5540 /* PostmarkTheme.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		"TEMP_B85CCCAC-EFC8-4A56-A7DF-3075A76BAB0D" /* Postmark */ = {
+			isa = PBXGroup;
+			children = (
+				"TEMP_123190D5-4CB1-4551-A2E5-4A01D98A0A70" /* Secrets.xcconfig */,
 			);
 			path = Postmark;
 			sourceTree = "<group>";
@@ -178,9 +192,11 @@
 			files = (
 				BEE2F485F94B65072CB2B321 /* AlbumView.swift in Sources */,
 				742A706CFADC2A1D8346CD48 /* CameraService.swift in Sources */,
+				AB4648F0ABFAB758F83DD440 /* CancellationMark.swift in Sources */,
 				0207BF9CC9B205E1B27BDF45 /* PaywallView.swift in Sources */,
 				7176B6CEE443E0371CD5B3E8 /* PostmarkAPI.swift in Sources */,
 				8CC92A6FD4E55B26D1EC1D9D /* PostmarkApp.swift in Sources */,
+				2A58AC9C6B8BB2768854302F /* PostmarkTheme.swift in Sources */,
 				5CD6CD1FA3A5A65D01AC2BA8 /* ScanView.swift in Sources */,
 				B03A19BE3185BA090FC1B703 /* StampDetailView.swift in Sources */,
 				E3607F8BEFBFAC30E1219565 /* StampItem.swift in Sources */,
@@ -267,7 +283,7 @@
 		};
 		66DD398F8C9890BBD44DABB7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = "TEMP_A7B1380B-E76D-449A-8B26-8E5D8CEA4874" /* Secrets.xcconfig */;
+			baseConfigurationReference = "TEMP_123190D5-4CB1-4551-A2E5-4A01D98A0A70" /* Secrets.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -358,7 +374,7 @@
 		};
 		E597EB5BAD23F4BFFA93BC2E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = "TEMP_A7B1380B-E76D-449A-8B26-8E5D8CEA4874" /* Secrets.xcconfig */;
+			baseConfigurationReference = "TEMP_123190D5-4CB1-4551-A2E5-4A01D98A0A70" /* Secrets.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
