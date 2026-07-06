@@ -488,14 +488,20 @@ struct StampRevealView: View {
 
     private var card: some View {
         VStack(spacing: 14) {
-            if let photo {
-                Image(uiImage: photo)
-                    .resizable()
-                    .scaledToFill()
-                    .frame(height: 190)
-                    .frame(maxWidth: .infinity)
-                    .clipShape(RoundedRectangle(cornerRadius: 4))
+            // Always reserve this strip (even without a photo) so the
+            // cancellation mark never lands on the headline text below.
+            Group {
+                if let photo {
+                    Image(uiImage: photo)
+                        .resizable()
+                        .scaledToFill()
+                } else {
+                    PostmarkTheme.creamDeep
+                }
             }
+            .frame(height: 190)
+            .frame(maxWidth: .infinity)
+            .clipShape(RoundedRectangle(cornerRadius: 4))
 
             VStack(spacing: 5) {
                 Text(headline)
