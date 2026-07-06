@@ -549,9 +549,10 @@ struct StampRevealView: View {
             valueColumn("USED", low: result.valueLowUsed, high: result.valueHighUsed)
             Rectangle()
                 .fill(PostmarkTheme.inkSoft.opacity(0.3))
-                .frame(width: 1)
+                .frame(width: 1, height: 46)
             valueColumn("MINT", low: result.valueLowMint, high: result.valueHighMint)
         }
+        .fixedSize(horizontal: false, vertical: true)
         .frame(maxWidth: .infinity)
         .padding(.vertical, 12)
         .overlay(

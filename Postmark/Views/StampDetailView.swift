@@ -116,9 +116,10 @@ struct StampDetailView: View {
                 valueColumn("USED", low: item.valueLowUsed, high: item.valueHighUsed)
                 Rectangle()
                     .fill(PostmarkTheme.inkSoft.opacity(0.3))
-                    .frame(width: 1)
+                    .frame(width: 1, height: 44)
                 valueColumn("MINT", low: item.valueLowMint, high: item.valueHighMint)
             }
+            .fixedSize(horizontal: false, vertical: true)
             .frame(maxWidth: .infinity)
             .padding(.vertical, 10)
             .overlay(
